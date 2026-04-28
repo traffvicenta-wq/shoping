@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protocolo Personalizado WPink</title>
+    <title>Protocolo Personalizado Wpink SLV</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -100,7 +100,7 @@
 
 <div class="container">
     <div class="step active" id="s1">
-        <h2>O que você deseja transformar hoje?</h2>
+        <h2>O que você deseja transformar hoje com Wpink SLV?</h2>
         <button class="option-btn" onclick="next(2)">Cabelos fortes e unhas inquebráveis</button>
         <button class="option-btn" onclick="next(2)">Pele radiante e firme</button>
         <button class="option-btn" onclick="next(2)">Mais energia e imunidade</button>
@@ -109,24 +109,24 @@
     <div class="step" id="s2">
         <h2>Como está sua rotina atual?</h2>
         <button class="option-btn" onclick="next(3)">Preciso de praticidade no dia a dia</button>
-        <button class="option-btn" onclick="next(3)">Já me cuido, mas quero potencializar</button>
+        <button class="option-btn" onclick="next(3)">Já me cuido, mas quero potencializar com Wpink SLV</button>
         <button class="option-btn" onclick="next(3)">Estou focada em renovar meu visual</button>
     </div>
 
     <div class="step" id="loading">
-        <h2>Preparando sua recomendação personalizada...</h2>
+        <h2>Preparando sua recomendação Wpink SLV...</h2>
         <div class="loader"></div>
         <p>Verificando estoque disponível...</p>
     </div>
 
     <div class="step" id="final">
         <h2 style="color: #ba68c8;">Temos uma sugestão!</h2>
-        <p>Com base no seu perfil, este é o protocolo WPink mais indicado para seus objetivos em 2026.</p>
+        <p>Com base no seu perfil, este é o protocolo Wpink SLV mais indicado para seus objetivos em 2026.</p>
         <a href="https://wpinkslvsuplementsvg.netlify.app/" class="cta-btn">RESGATAR MINHA OFERTA</a>
     </div>
 
     <div class="footer">
-        <p>© 2026 Protocolo Beauty & Wellness. Todos os direitos reservados.</p>
+        <p>© 2026 Protocolo Beauty & Wellness Wpink SLV. Todos os direitos reservados.</p>
         <p><a href="#" style="color: #bbb;">Privacidade</a> | <a href="#" style="color: #bbb;">Termos de Uso</a></p>
         <p style="margin-top:10px;">Este site não é afiliado ao Google Inc. de nenhuma forma.</p>
     </div>
@@ -140,7 +140,7 @@
             setTimeout(() => {
                 document.getElementById('loading').classList.remove('active');
                 document.getElementById('final').classList.add('active');
-            }, 2500); // 2.5 segundos para parecer uma análise real
+            }, 2500); 
         } else {
             document.getElementById('s' + step).classList.add('active');
         }
