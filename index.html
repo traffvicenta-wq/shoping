@@ -1,151 +1,285 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protocolo Personalizado Wpink SLV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --pink-primary: #ff85a1;
-            --purple-soft: #f3e5f5;
-            --text-dark: #4a4a4a;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #fff5f7 0%, #f3e5f5 100%);
-            color: var(--text-dark);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 450px;
-            background: #ffffff;
-            padding: 40px 25px;
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(255, 133, 161, 0.15);
-            text-align: center;
-        }
-
-        h2 { color: var(--pink-primary); font-size: 22px; margin-bottom: 15px; }
-        p { font-size: 15px; color: #777; line-height: 1.5; }
-
-        .step { display: none; }
-        .step.active { display: block; }
-
-        .option-btn {
-            display: block;
-            width: 100%;
-            padding: 16px;
-            margin: 12px 0;
-            border: 2px solid #fce4ec;
-            border-radius: 50px;
-            background: #fff;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 600;
-            transition: all 0.3s;
-            color: var(--text-dark);
-            outline: none;
-        }
-
-        .option-btn:hover {
-            background: var(--pink-primary);
-            color: white;
-            border-color: var(--pink-primary);
-        }
-
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid var(--pink-primary);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-        .cta-btn {
-            display: inline-block;
-            background: linear-gradient(90deg, #ff85a1, #ba68c8);
-            color: white;
-            padding: 18px 35px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(255, 133, 161, 0.4);
-            transition: transform 0.2s;
-        }
-
-        .cta-btn:hover { transform: scale(1.05); }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 10px;
-            color: #bbb;
-            line-height: 1.4;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Renata Muniz Home Care — Assistência Domiciliar em Diadema/SP</title>
+<meta name="description" content="Serviços de assistência e cuidados em saúde no domicílio. Atendimento humanizado para pacientes em Diadema, SP e região." />
+<meta name="author" content="50.681.065 Renata Muniz da Silva" />
+<meta property="og:title" content="Renata Muniz Home Care" />
+<meta property="og:description" content="Cuidados de saúde domiciliares em Diadema/SP." />
+<meta property="og:type" content="website" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Renata Muniz Home Care","legalName":"50.681.065 Renata Muniz da Silva","taxID":"50.681.065/0001-18","telephone":"+55-11-4049-2007","email":"renatamz2020@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Rua Carati, 303","addressLocality":"Diadema","addressRegion":"SP","postalCode":"09971-130","addressCountry":"BR"}}
+</script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--bg:#fff;--fg:#1a2733;--muted:#6b7a87;--primary:#2a8aa8;--primary-fg:#fff;--accent:#e6f3f7;--card:#fff;--border:#e3eaf0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+  a{color:var(--primary);text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+  header{background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem;flex-wrap:wrap;gap:1rem}
+  .logo{font-weight:700;font-size:1.1rem;color:var(--primary)}
+  nav ul{display:flex;list-style:none;gap:.25rem;flex-wrap:wrap}
+  nav a{padding:.5rem .75rem;border-radius:6px;color:var(--fg);font-size:.9rem}
+  nav a:hover,nav a.active{background:var(--accent)}
+  .btn{display:inline-block;padding:.75rem 1.5rem;background:var(--primary);color:var(--primary-fg);border-radius:6px;font-weight:500;border:none;cursor:pointer}
+  .btn:hover{opacity:.9}
+  .btn-outline{background:transparent;color:var(--fg);border:1px solid var(--border)}
+  .hero{background:linear-gradient(135deg,#e6f3f7,#fff,#d8ebf1);padding:4rem 0}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+  @media(min-width:768px){.hero-grid{grid-template-columns:1fr 1fr}}
+  .badge{display:inline-block;background:rgba(42,138,168,.15);color:var(--primary);padding:.25rem .75rem;border-radius:999px;font-size:.75rem;font-weight:600;margin-bottom:1rem}
+  h1{font-size:2.25rem;margin-bottom:1rem}
+  h2{font-size:1.75rem;margin-bottom:1rem}
+  h3{font-size:1.1rem;margin-bottom:.5rem}
+  .lead{color:var(--muted);font-size:1.1rem;margin-bottom:1.5rem}
+  .actions{display:flex;gap:.75rem;flex-wrap:wrap}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+  .features{padding:4rem 0}
+  .grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+  @media(min-width:600px){.grid-2{grid-template-columns:1fr 1fr}}
+  @media(min-width:768px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+  .feature-list{list-style:none}
+  .feature-list li{display:flex;gap:.75rem;margin-bottom:1rem}
+  .icon{width:24px;height:24px;color:var(--primary);flex-shrink:0;margin-top:2px}
+  section.cta{background:var(--accent);padding:4rem 0;text-align:center}
+  .muted{color:var(--muted)}
+  .page{padding:3rem 0;display:none}
+  .page.active{display:block}
+  .page h1{margin-bottom:1rem}
+  .page h2{margin-top:2rem;font-size:1.4rem}
+  .page p,.page ul{margin-bottom:1rem}
+  .page ul{padding-left:1.5rem}
+  .page ul li{margin-bottom:.25rem}
+  form{display:grid;gap:1rem}
+  input,textarea{width:100%;padding:.6rem;border:1px solid var(--border);border-radius:6px;font:inherit}
+  label{font-weight:500;font-size:.9rem;display:block;margin-bottom:.25rem}
+  footer{background:var(--card);border-top:1px solid var(--border);margin-top:4rem;padding:2.5rem 0 1rem}
+  .footer-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+  @media(min-width:768px){.footer-grid{grid-template-columns:repeat(3,1fr)}}
+  footer h4{color:var(--primary);font-size:1rem;margin-bottom:.75rem}
+  footer p,footer li{font-size:.875rem;color:var(--muted);margin-bottom:.4rem}
+  footer ul{list-style:none}
+  .copy{text-align:center;font-size:.8rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;margin-top:2rem}
+  .notice{background:var(--accent);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:1.5rem;font-size:.9rem}
+</style>
 </head>
 <body>
 
-<div class="container">
-    <div class="step active" id="s1">
-        <h2>O que você deseja transformar hoje com Wpink SLV?</h2>
-        <button class="option-btn" onclick="next(2)">Cabelos fortes e unhas inquebráveis</button>
-        <button class="option-btn" onclick="next(2)">Pele radiante e firme</button>
-        <button class="option-btn" onclick="next(2)">Mais energia e imunidade</button>
-    </div>
+<header>
+  <div class="container nav">
+    <a href="#inicio" class="logo">♥ Renata Muniz Home Care</a>
+    <nav><ul>
+      <li><a href="#inicio" data-page="inicio" class="active">Início</a></li>
+      <li><a href="#servicos" data-page="servicos">Serviços</a></li>
+      <li><a href="#sobre" data-page="sobre">Sobre</a></li>
+      <li><a href="#contato" data-page="contato">Contato</a></li>
+    </ul></nav>
+  </div>
+</header>
 
-    <div class="step" id="s2">
-        <h2>Como está sua rotina atual?</h2>
-        <button class="option-btn" onclick="next(3)">Preciso de praticidade no dia a dia</button>
-        <button class="option-btn" onclick="next(3)">Já me cuido, mas quero potencializar com Wpink SLV</button>
-        <button class="option-btn" onclick="next(3)">Estou focada em renovar meu visual</button>
-    </div>
+<main>
 
-    <div class="step" id="loading">
-        <h2>Preparando sua recomendação Wpink SLV...</h2>
-        <div class="loader"></div>
-        <p>Verificando estoque disponível...</p>
+<!-- INÍCIO -->
+<div id="inicio" class="page active">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">CNAE 87.12-3-00 • Assistência Domiciliar</span>
+        <h1>Cuidado humanizado na sua casa, todos os dias</h1>
+        <p class="lead">Oferecemos infraestrutura de apoio e assistência ao paciente no domicílio, com equipe qualificada e atendimento personalizado em Diadema/SP e região.</p>
+        <div class="actions">
+          <a href="#contato" data-page="contato" class="btn">Solicitar avaliação</a>
+          <a href="#servicos" data-page="servicos" class="btn btn-outline">Ver serviços</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Por que escolher?</h2>
+        <ul class="feature-list">
+          <li><span class="icon">✓</span><div><strong>Empresa registrada</strong><p class="muted">CNPJ ativo e atuação regular.</p></div></li>
+          <li><span class="icon">✓</span><div><strong>Atendimento contínuo</strong><p class="muted">Suporte planejado conforme a necessidade.</p></div></li>
+          <li><span class="icon">✓</span><div><strong>Cuidado humanizado</strong><p class="muted">Foco no bem-estar do paciente e da família.</p></div></li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div class="step" id="final">
-        <h2 style="color: #ba68c8;">Temos uma sugestão!</h2>
-        <p>Com base no seu perfil, este é o protocolo Wpink SLV mais indicado para seus objetivos em 2026.</p>
-        <a href="https://wpinkslvsuplementsvg.netlify.app/" class="cta-btn">RESGATAR MINHA OFERTA</a>
+  <section class="features container">
+    <h2 style="text-align:center">Nossos serviços</h2>
+    <p style="text-align:center;margin-bottom:2rem" class="muted">Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio.</p>
+    <div class="grid grid-3">
+      <div class="card"><h3>♥ Cuidados de Enfermagem</h3><p class="muted">Acompanhamento clínico domiciliar conforme prescrição.</p></div>
+      <div class="card"><h3>👥 Cuidadores Capacitados</h3><p class="muted">Apoio nas atividades diárias do paciente.</p></div>
+      <div class="card"><h3>🩺 Suporte Multidisciplinar</h3><p class="muted">Articulação com profissionais de saúde quando necessário.</p></div>
     </div>
+  </section>
 
-    <div class="footer">
-        <p>© 2026 Protocolo Beauty & Wellness Wpink SLV. Todos os direitos reservados.</p>
-        <p><a href="#" style="color: #bbb;">Privacidade</a> | <a href="#" style="color: #bbb;">Termos de Uso</a></p>
-        <p style="margin-top:10px;">Este site não é afiliado ao Google Inc. de nenhuma forma.</p>
+  <section class="cta">
+    <div class="container">
+      <h2>Pronto para receber atendimento em casa?</h2>
+      <p class="muted" style="margin-bottom:1.5rem">Entre em contato e converse com nossa equipe.</p>
+      <a href="#contato" data-page="contato" class="btn">Fale conosco</a>
     </div>
+  </section>
 </div>
 
-<script>
-    function next(step) {
-        document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
-        if(step === 3) {
-            document.getElementById('loading').classList.add('active');
-            setTimeout(() => {
-                document.getElementById('loading').classList.remove('active');
-                document.getElementById('final').classList.add('active');
-            }, 2500); 
-        } else {
-            document.getElementById('s' + step).classList.add('active');
-        }
-    }
-</script>
+<!-- SERVIÇOS -->
+<div id="servicos" class="page">
+  <div class="container">
+    <h1>Serviços</h1>
+    <p class="muted" style="margin-bottom:2rem">Atuamos no CNAE 87.12-3-00 — Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio.</p>
+    <div class="grid grid-3">
+      <div class="card"><h3>Cuidados de Enfermagem</h3><p class="muted">Administração de medicamentos, curativos, controle de sinais vitais conforme prescrição.</p></div>
+      <div class="card"><h3>Cuidadores de Pacientes</h3><p class="muted">Apoio nas atividades de vida diária: higiene, alimentação, locomoção e companhia.</p></div>
+      <div class="card"><h3>Suporte Multidisciplinar</h3><p class="muted">Articulação com fisioterapeutas, nutricionistas e outros profissionais.</p></div>
+      <div class="card"><h3>Pacientes Crônicos</h3><p class="muted">Plano de cuidados contínuo para idosos, crônicos e pós-operatório.</p></div>
+      <div class="card"><h3>Gestão de Medicamentos</h3><p class="muted">Organização de horários, controle de doses e adesão ao tratamento.</p></div>
+      <div class="card"><h3>Avaliação Domiciliar</h3><p class="muted">Visita inicial para avaliar necessidades e elaborar plano personalizado.</p></div>
+    </div>
+    <div class="notice"><strong>Aviso:</strong> Os serviços não substituem consulta médica. Para emergências, ligue 192 (SAMU).</div>
+  </div>
+</div>
 
+<!-- SOBRE -->
+<div id="sobre" class="page">
+  <div class="container" style="max-width:780px">
+    <h1>Sobre Nós</h1>
+    <p>A <strong>Renata Muniz Home Care</strong> (razão social <strong>50.681.065 Renata Muniz da Silva</strong>) é uma empresa sediada em Diadema/SP, dedicada ao fornecimento de infraestrutura de apoio e assistência a pacientes no domicílio.</p>
+    <p>Nossa missão é levar cuidado de saúde com responsabilidade, ética e empatia para dentro do lar do paciente.</p>
+    <h2>Missão</h2>
+    <p>Promover atendimento domiciliar humanizado, contribuindo para a recuperação, autonomia e bem-estar dos pacientes.</p>
+    <h2>Valores</h2>
+    <ul>
+      <li>Respeito ao paciente e à família</li>
+      <li>Ética profissional e transparência</li>
+      <li>Compromisso com a qualidade do cuidado</li>
+      <li>Privacidade e proteção de dados</li>
+    </ul>
+    <h2>Dados da empresa</h2>
+    <ul>
+      <li><strong>Razão Social:</strong> 50.681.065 Renata Muniz da Silva</li>
+      <li><strong>CNPJ:</strong> 50.681.065/0001-18</li>
+      <li><strong>CNAE:</strong> 87.12-3-00 — Assistência a paciente no domicílio</li>
+      <li><strong>Endereço:</strong> Rua Carati, 303 — Eldorado, Diadema/SP, CEP 09971-130</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CONTATO -->
+<div id="contato" class="page">
+  <div class="container">
+    <h1>Fale Conosco</h1>
+    <p class="muted" style="margin-bottom:2rem">Estamos disponíveis para esclarecer dúvidas e agendar avaliação domiciliar.</p>
+    <div class="grid grid-2">
+      <div>
+        <a href="tel:+551140492007" class="card" style="display:block;margin-bottom:1rem"><strong>📞 Telefone</strong><p class="muted">(11) 4049-2007</p></a>
+        <a href="mailto:renatamz2020@gmail.com" class="card" style="display:block;margin-bottom:1rem"><strong>✉ E-mail</strong><p class="muted">renatamz2020@gmail.com</p></a>
+        <div class="card" style="margin-bottom:1rem"><strong>📍 Endereço</strong><p class="muted">Rua Carati, 303 — Eldorado<br/>Diadema/SP — CEP 09971-130</p></div>
+        <div class="card"><strong>🕐 Horário</strong><p class="muted">Segunda a sexta, 08h às 18h</p></div>
+      </div>
+      <form class="card" onsubmit="event.preventDefault();window.location.href='mailto:renatamz2020@gmail.com'">
+        <h2>Envie uma mensagem</h2>
+        <div><label for="n">Nome</label><input id="n" required></div>
+        <div><label for="e">E-mail</label><input id="e" type="email" required></div>
+        <div><label for="t">Telefone</label><input id="t"></div>
+        <div><label for="m">Mensagem</label><textarea id="m" rows="4" required></textarea></div>
+        <button type="submit" class="btn">Enviar</button>
+        <p class="muted" style="font-size:.75rem">Ao enviar, você concorda com nossa Política de Privacidade.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACIDADE -->
+<div id="privacidade" class="page">
+  <div class="container" style="max-width:780px">
+    <h1>Política de Privacidade</h1>
+    <p class="muted">Última atualização: 14 de maio de 2026</p>
+    <h2>1. Quem somos</h2>
+    <p>Esta Política descreve como a <strong>50.681.065 Renata Muniz da Silva</strong> (CNPJ 50.681.065/0001-18) trata os dados pessoais coletados.</p>
+    <h2>2. Dados que coletamos</h2>
+    <ul><li>Dados de contato: nome, telefone, e-mail e mensagem.</li><li>Dados de navegação: IP, dispositivo, navegador, páginas, data/hora.</li><li>Cookies de funcionamento e melhoria de experiência.</li></ul>
+    <h2>3. Finalidade</h2>
+    <ul><li>Responder solicitações;</li><li>Prestar informações sobre serviços;</li><li>Cumprir obrigações legais;</li><li>Melhorar segurança e navegação.</li></ul>
+    <h2>4. Base legal</h2>
+    <p>Tratamento conforme a LGPD (Lei nº 13.709/2018): consentimento, execução de contrato, obrigação legal e legítimo interesse.</p>
+    <h2>5. Compartilhamento</h2>
+    <p>Não comercializamos dados. Compartilhamos apenas com prestadores estritamente necessários ou por exigência legal.</p>
+    <h2>6. Segurança</h2>
+    <p>Adotamos medidas técnicas e administrativas para proteger os dados.</p>
+    <h2>7. Direitos do titular</h2>
+    <p>Você pode solicitar acesso, correção, anonimização, portabilidade, eliminação e revogação do consentimento.</p>
+    <h2>8. Cookies</h2>
+    <p>Você pode gerenciar cookies nas configurações do seu navegador.</p>
+    <h2>9. Contato</h2>
+    <p>E-mail: <a href="mailto:renatamz2020@gmail.com">renatamz2020@gmail.com</a> — Telefone: (11) 4049-2007</p>
+  </div>
+</div>
+
+<!-- TERMOS -->
+<div id="termos" class="page">
+  <div class="container" style="max-width:780px">
+    <h1>Termos de Uso</h1>
+    <p class="muted">Última atualização: 14 de maio de 2026</p>
+    <h2>1. Aceitação</h2>
+    <p>Ao usar este site, você concorda com estes Termos e com a Política de Privacidade.</p>
+    <h2>2. Objeto</h2>
+    <p>Apresentar informações institucionais sobre serviços prestados pela 50.681.065 Renata Muniz da Silva (CNAE 87.12-3-00).</p>
+    <h2>3. Conteúdo informativo</h2>
+    <p>O conteúdo é informativo e não substitui consulta médica. Em emergências, ligue 192 (SAMU).</p>
+    <h2>4. Uso permitido</h2>
+    <p>Uso lícito, vedada fraude, engenharia reversa ou violação de direitos de terceiros.</p>
+    <h2>5. Propriedade intelectual</h2>
+    <p>Todo o conteúdo é de titularidade da empresa ou de licenciantes. Reprodução proibida sem autorização.</p>
+    <h2>6. Limitação de responsabilidade</h2>
+    <p>Não nos responsabilizamos por interrupções ou erros, comprometendo-nos a corrigi-los.</p>
+    <h2>7. Foro</h2>
+    <p>Comarca de Diadema/SP.</p>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>Renata Muniz Home Care</h4>
+      <p>Atividades de fornecimento de infraestrutura de apoio e assistência ao paciente no domicílio.</p>
+      <p>CNPJ: 50.681.065/0001-18</p>
+      <p>Razão Social: 50.681.065 Renata Muniz da Silva</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>📞 <a href="tel:+551140492007">(11) 4049-2007</a></p>
+      <p>✉ <a href="mailto:renatamz2020@gmail.com">renatamz2020@gmail.com</a></p>
+      <p>📍 Rua Carati, 303 — Eldorado, Diadema/SP, CEP 09971-130</p>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#privacidade" data-page="privacidade">Política de Privacidade</a></li>
+        <li><a href="#termos" data-page="termos">Termos de Uso</a></li>
+        <li><a href="#contato" data-page="contato">Fale Conosco</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copy">© <span id="y"></span> 50.681.065 Renata Muniz da Silva. Todos os direitos reservados.</div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+function show(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const t=document.getElementById(id);if(t)t.classList.add('active');
+  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.dataset.page===id));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('a[data-page]').forEach(a=>{
+  a.addEventListener('click',e=>{e.preventDefault();const p=a.dataset.page;show(p);history.replaceState(null,'','#'+p);});
+});
+const h=location.hash.replace('#','');if(h)show(h);
+</script>
 </body>
 </html>
