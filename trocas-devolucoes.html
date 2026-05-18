@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocas e Devoluções - Distribuidora N1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .logo-badge {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #ec4899 0%, #22d3ee 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ec4899 0%, #22d3ee 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 60px 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        strong {
+            color: #1a1a1a;
+        }
+
+        .highlight {
+            background: rgba(236, 72, 153, 0.1);
+            padding: 20px;
+            border-left: 4px solid #ec4899;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .last-update {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 24px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 40px 0 20px;
+            color: #666;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ec4899;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ec4899;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .back-button:hover {
+            color: #22d3ee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-badge">N1</div>
+                    <span>Distribuidora N1</span>
+                </a>
+                <a href="https://wa.me/558599246433?text=Olá!%20Gostaria%20de%20conhecer%20os%20produtos%20da%20Distribuidora%20N1" target="_blank" class="cta-button">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article>
+                <a href="index.html" class="back-button">← Voltar para início</a>
+                
+                <h1>Trocas e Devoluções</h1>
+
+                <section>
+                    <h2>Política de Trocas e Devoluções</h2>
+                    <p>A Distribuidora N1 LTDA está comprometida em oferecer a melhor experiência de compra. Se você não estiver satisfeito com seu produto, oferecemos uma política clara e justa de trocas e devoluções.</p>
+                </section>
+
+                <section>
+                    <h2>Prazo para Devolução</h2>
+                    <p>Você tem até <strong>7 dias corridos</strong> após o recebimento do produto para solicitar uma troca ou devolução. O prazo começa a contar a partir da data de entrega.</p>
+                </section>
+
+                <section>
+                    <h2>Condições para Devolução</h2>
+                    <p>Para que a devolução seja aceita, o produto deve atender aos seguintes critérios:</p>
+                    <ul>
+                        <li>Estar em perfeito estado, sem danos físicos ou sinais de uso</li>
+                        <li>Incluir todos os acessórios e embalagem original</li>
+                        <li>Ter a nota fiscal original</li>
+                        <li>Não ter sido utilizado</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Processo de Devolução</h2>
+                    <p>Para solicitar uma devolução ou troca, siga os passos abaixo:</p>
+                    <ul>
+                        <li>Entre em contato conosco via WhatsApp: (85) 99924-6433</li>
+                        <li>Informe o número do pedido e o motivo da devolução</li>
+                        <li>Aguarde a confirmação e as instruções de envio</li>
+                        <li>Envie o produto para o endereço fornecido (frete por conta do cliente)</li>
+                        <li>Após recebimento e inspeção, processaremos o reembolso ou troca</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Reembolso</h2>
+                    <p>O reembolso será processado em até <strong>10 dias úteis</strong> após a confirmação da devolução. O valor será creditado na mesma forma de pagamento utilizada na compra.</p>
+                    <div class="highlight">
+                        <strong>Nota:</strong> O frete de devolução é de responsabilidade do cliente. Apenas em casos de defeito de fabricação, a Distribuidora N1 LTDA arcará com o frete de devolução.
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Defeitos de Fabricação</h2>
+                    <p>Se o produto apresentar defeito de fabricação, a Distribuidora N1 LTDA oferecerá:</p>
+                    <ul>
+                        <li>Troca por um produto novo (sem custo)</li>
+                        <li>Reembolso integral do valor pago</li>
+                        <li>Frete de devolução coberto pela Distribuidora N1 LTDA</li>
+                    </ul>
+                    <p>Para solicitar a troca por defeito, entre em contato conosco dentro de <strong>30 dias</strong> após o recebimento do produto.</p>
+                </section>
+
+                <section>
+                    <h2>Produtos Não Devolvíveis</h2>
+                    <p>Os seguintes produtos não podem ser devolvidos:</p>
+                    <ul>
+                        <li>Produtos com sinais visíveis de uso ou danos</li>
+                        <li>Produtos sem a embalagem original</li>
+                        <li>Produtos sem a nota fiscal</li>
+                        <li>Acessórios soltos ou faltando componentes</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contato para Devoluções</h2>
+                    <p>Para solicitar uma devolução ou troca, entre em contato conosco:</p>
+                    <ul>
+                        <li><strong>WhatsApp:</strong> (85) 99924-6433</li>
+                        <li><strong>E-mail:</strong> suporteonlinenumberone@gmail.com</li>
+                        <li><strong>Horário de atendimento:</strong> Segunda a sábado, 9h às 18h</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Garantia do Fabricante</h2>
+                    <p>Todos os produtos vendidos pela Distribuidora N1 LTDA incluem a garantia do fabricante. Para informações detalhadas sobre a garantia, consulte a documentação do produto ou entre em contato conosco.</p>
+                </section>
+
+                <div class="last-update">
+                    <p><strong>Última atualização:</strong> 18 de maio de 2026</p>
+                    <p>© 2026 Distribuidora N1 LTDA - CNPJ 61.956.624/0001-71</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="index.html">Início</a>
+                    <a href="trocas-devolucoes.html">Trocas e Devoluções</a>
+                    <a href="https://wa.me/558599246433" target="_blank">WhatsApp</a>
+                </div>
+                <p>© 2026 Distribuidora N1 LTDA - CNPJ 61.956.624/0001-71</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
