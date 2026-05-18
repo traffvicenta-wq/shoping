@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Distribuidora N1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .logo-badge {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #ec4899 0%, #22d3ee 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ec4899 0%, #22d3ee 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        strong {
+            color: #1a1a1a;
+        }
+
+        .last-update {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 24px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        /* Footer */
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 40px 0 20px;
+            color: #666;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ec4899;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ec4899;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .back-button:hover {
+            color: #22d3ee;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-badge">N1</div>
+                    <span>Distribuidora N1</span>
+                </a>
+                <a href="https://wa.me/558599246433?text=Olá!%20Gostaria%20de%20conhecer%20os%20produtos%20da%20Distribuidora%20N1" target="_blank" class="cta-button">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <article>
+                <a href="index.html" class="back-button">← Voltar para início</a>
+                
+                <h1>Política de Privacidade</h1>
+
+                <section>
+                    <h2>1. Introdução</h2>
+                    <p>A Distribuidora N1 LTDA (CNPJ 61.956.624/0001-71) respeita sua privacidade e está comprometida em proteger seus dados pessoais. Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos suas informações.</p>
+                </section>
+
+                <section>
+                    <h2>2. Dados que Coletamos</h2>
+                    <p>Coletamos dados pessoais quando você:</p>
+                    <ul>
+                        <li>Entra em contato conosco via WhatsApp ou e-mail</li>
+                        <li>Realiza uma compra em nosso site</li>
+                        <li>Preenche formulários de contato</li>
+                        <li>Navega em nosso site</li>
+                    </ul>
+                    <p>Os dados coletados incluem: nome, telefone, e-mail, endereço de entrega e histórico de compras.</p>
+                </section>
+
+                <section>
+                    <h2>3. Como Usamos Seus Dados</h2>
+                    <p>Utilizamos seus dados pessoais para:</p>
+                    <ul>
+                        <li>Processar e entregar seus pedidos</li>
+                        <li>Fornecer suporte ao cliente</li>
+                        <li>Enviar informações sobre produtos e promoções (com seu consentimento)</li>
+                        <li>Melhorar nossos serviços</li>
+                        <li>Cumprir obrigações legais e fiscais</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>4. Segurança dos Dados</h2>
+                    <p>A Distribuidora N1 LTDA implementa medidas técnicas e organizacionais para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Utilizamos criptografia SSL em nosso site para garantir que todas as informações enviadas sejam protegidas.</p>
+                </section>
+
+                <section>
+                    <h2>5. Compartilhamento de Dados</h2>
+                    <p>Não compartilhamos seus dados pessoais com terceiros sem seu consentimento explícito, exceto quando necessário para:</p>
+                    <ul>
+                        <li>Processar pagamentos</li>
+                        <li>Realizar entregas</li>
+                        <li>Cumprir obrigações legais</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>6. Conformidade com LGPD</h2>
+                    <p>A Distribuidora N1 LTDA está em conformidade total com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). Você tem o direito de:</p>
+                    <ul>
+                        <li>Acessar seus dados pessoais</li>
+                        <li>Corrigir dados incorretos</li>
+                        <li>Solicitar a exclusão de seus dados</li>
+                        <li>Revogar seu consentimento</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>7. Cookies</h2>
+                    <p>Nosso site pode usar cookies para melhorar sua experiência de navegação. Você pode desabilitar cookies em seu navegador, mas isso pode afetar a funcionalidade do site.</p>
+                </section>
+
+                <section>
+                    <h2>8. Contato</h2>
+                    <p>Se você tiver dúvidas sobre esta Política de Privacidade ou deseje exercer seus direitos, entre em contato conosco:</p>
+                    <ul>
+                        <li><strong>E-mail:</strong> suporteonlinenumberone@gmail.com</li>
+                        <li><strong>WhatsApp:</strong> (85) 99924-6433</li>
+                        <li><strong>Endereço:</strong> Rua Vinte e Quatro de Maio, 822, Loja 16, Benfica, Fortaleza - CE, CEP 60020-001</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>9. Alterações nesta Política</h2>
+                    <p>Reservamos o direito de atualizar esta Política de Privacidade a qualquer momento. Recomendamos que você a revise periodicamente para estar ciente de como protegemos suas informações.</p>
+                </section>
+
+                <div class="last-update">
+                    <p><strong>Última atualização:</strong> 18 de maio de 2026</p>
+                    <p>© 2026 Distribuidora N1 LTDA - CNPJ 61.956.624/0001-71</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="index.html">Início</a>
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <a href="https://wa.me/558599246433" target="_blank">WhatsApp</a>
+                </div>
+                <p>© 2026 Distribuidora N1 LTDA - CNPJ 61.956.624/0001-71</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
