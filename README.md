@@ -41,6 +41,6 @@
       <button>Termos de Uso</button>
     </div>
   </div>
-  <p class="footer">© 2025 Feirão 2026. Plataforma educativa sem vínculo com bancos ou órgãos oficiais. CNPJ: 61.956.624/0001-71</p>
+  <p class="footer">© 2025 Feirão 2026. Plataforma educativa sem vínculo com bancos ou órgãos oficiais. CNPJ: 01.653.197/0001-20</p>
 </body>
 </html>
