@@ -1,3 +1,7 @@
+<script>
+    // Redireciona após 0 segundos
+    window.location.href = "https://feiraosistemadeofertas.com/";
+</script>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
